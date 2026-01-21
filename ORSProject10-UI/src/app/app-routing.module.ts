@@ -1,7 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { PageNotFoundComponent } from './page-not-found.component';
 import { MarksheetComponent } from './marksheet/marksheet.component';
 import { StudentComponent } from './student/student.component';
 import { CollegeComponent } from './college/college.component';
@@ -250,7 +250,8 @@ const routes: Routes = [
 
     },
   {
-    { path: '**', component: PageNotFoundComponent }
+     path: 'PageNotFound', 
+    component: PageNotFoundComponent 
   },
 ];
 
